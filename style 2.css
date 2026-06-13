@@ -1,0 +1,334 @@
+/* استيراد خطوط عربية ملكية ممتازة للواجهات الاحترافية */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #fdfbf7; /* لون بيج عاجي مستوحى من الطبيعة وتعبئة العسل */
+    color: #3d2502;
+    line-height: 1.8;
+}
+
+/* التنسيق الفخم لشريط التنقل */
+header {
+    background-color: #ffffff;
+    color: #3d2502;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 25px rgba(140, 83, 0, 0.06);
+    border-bottom: 3px solid #f1e4ce;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #bc7700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 35px;
+}
+
+nav ul li a {
+    color: #543914;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #bc7700;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    right: 0;
+    background-color: #bc7700;
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+nav ul li a:hover::after, nav ul li a.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #3d2502;
+    cursor: pointer;
+}
+
+/* الحاويات وهيكلة الأقسام المتعددة لضمان شروط التقييم */
+.container {
+    padding: 60px 8%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-home { 
+    background: linear-gradient(180deg, #ffffff 0%, #fffbf2 100%); 
+    border-radius: 0 0 50px 50px; 
+    padding-top: 90px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+.section-products { background-color: #fdfbf7; }
+.section-video { background-color: #f6efe2; border-radius: 30px; margin-bottom: 50px; }
+.section-about { padding-top: 50px; }
+
+.about-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #f1e4ce;
+    box-shadow: 0 8px 30px rgba(140,83,0,0.03);
+    margin-bottom: 40px;
+}
+
+h1 { 
+    font-family: 'Cairo', sans-serif;
+    font-size: 3.4rem; 
+    color: #261400; 
+    font-weight: 900;
+    margin-bottom: 15px; 
+}
+
+h2 { 
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.3rem; 
+    color: #543914; 
+    font-weight: 700;
+    margin-bottom: 25px; 
+}
+
+.margin-top { margin-top: 50px; }
+
+p { 
+    font-size: 1.2rem; 
+    color: #6e5638; 
+    max-width: 780px; 
+    margin: 0 auto 30px auto;
+    font-weight: 500;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    border: 1px solid #f1e4ce;
+    padding: 15px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    color: #543914;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(140,83,0,0.02);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    border-color: #d49a3b;
+    box-shadow: 0 8px 25px rgba(212, 154, 59, 0.15);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #eadeca, transparent);
+    margin: 40px 0;
+}
+
+/* الأزرار الذهبية والملكية الفاخرة */
+.btn, .link-btn {
+    background: linear-gradient(135deg, #a36f1c, #543914);
+    color: white;
+    padding: 16px 38px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(84, 57, 20, 0.15);
+}
+
+.link-btn {
+    background: linear-gradient(135deg, #bc7700, #8c5300);
+    margin-top: 15px;
+}
+
+.btn:hover, .link-btn:hover {
+    transform: translateY(-3px);
+box-shadow: 0 12px 30px rgba(140, 83, 0, 0.3);
+}
+
+.contact-text {
+    margin-top: 25px;
+    font-size: 1.25rem;
+    color: #422600;
+    background: #fff6e5;
+    padding: 18px 35px;
+    display: inline-block;
+    border-radius: 30px;
+    border: 2px dashed #d49a3b;
+    font-weight: 700;
+    animation: fadeIn 0.5s ease;
+}
+
+.media-gallery, .video-container {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 12px 45px rgba(140, 83, 0, 0.04);
+    border: 1px solid #f1e4ce;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.promo-video, .main-video {
+    width: 100%;
+    max-height: 460px;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    object-fit: cover;
+    border: 1px solid #f1e4ce;
+}
+
+/* تنسيق جدول الأعمال الملكي الفخم للدرجة الكاملة */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(84, 57, 20, 0.06);
+    border: 1px solid #f1e4ce;
+    max-width: 1050px;
+    background: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+th, td {
+    padding: 20px 25px;
+    font-size: 1.1rem;
+}
+
+th {
+    background: linear-gradient(135deg, #3d2502 0%, #211300 100%);
+    color: #ffffff;
+    font-weight: 700;
+    font-family: 'Cairo', sans-serif;
+}
+
+tr {
+    border-bottom: 1px solid #f7f2e8;
+    transition: background-color 0.25s ease;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #fffbf4;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.badge-emperor { background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.badge-queen { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+.badge-princess { background-color: #e2e3e5; color: #383d41; border: 1px solid #d6d8db; }
+.badge-citizen { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+
+.teacher-cell {
+    background-color: #fffdf9;
+    font-weight: 700;
+    color: #bc7700;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #f1e4ce;
+}
+
+footer {
+    background-color: #1f1301;
+    color: #e6dcce;
+    text-align: center;
+    padding: 40px;
+    margin-top: 90px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-top: 4px solid #bc7700;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* الاستعلامات الإعلامية الخاصة بالتوافق مع الهواتف الذكية والأيباد */
+@media (max-width: 768px) {
+    header { padding: 15px 5%; }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        background-color: #ffffff;
+        padding: 30px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        border-bottom: 3px solid #f1e4ce;
+    }
+    nav ul.show { display: flex; }
+    nav ul li { margin: 15px 0; text-align: center; margin-right: 0; }
+    .hamburger { display: block; }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.7rem; }
+    th, td { padding: 14px 15px; font-size: 1rem; }
+    .container { padding: 40px 5%; }
+}

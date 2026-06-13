@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عسل الباحة | نقاء الطبيعة</title>
+    <!-- ربط ملف التنسيق CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل وقائمة الهمبرغر -->
+    <header>
+        <div class="logo">🐝 عسل الباحة</div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="#products">مميزاتنا ومعرضنا</a></li>
+                <li><a href="about.html">جدول أعمال الفريق 🔗</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الأول: الرئيسية والترحيب الزمني المخصص -->
+    <div class="container section-home" id="home">
+        <!-- يتم إدراج الترحيب بالاسم والوقت آلياً عبر الجافا سكريبت -->
+        <h1 id="time-greeting">مرحباً بكم</h1>
+        <h2>عسل الباحة 🍯 (نقاء الطبيعة)</h2>
+        <p>عسل الباحة الطبيعي 100%، نستخرجه بعناية من أزهار جبال الباحة ليمنحك طعماً أصيلاً وفوائد صحية لا تضاهى.</p>
+        
+        <button id="show-contact-btn" class="btn">طلب العسل أو الاستفسار</button>
+        <p id="contact-info" class="contact-text" style="display:none;"></p>
+    </div>
+
+    <hr>
+
+    <!-- القسم الثاني: المميزات والمعرض والوسائط -->
+    <div class="container section-products" id="products">
+        <h2>مميزات عسلنا الطبيعي</h2>
+        
+        <div class="features-grid">
+            <div class="feature-item">⭐ طبيعي 100%</div>
+            <div class="feature-item">🚫 بدون إضافات</div>
+            <div class="feature-item">💪 غني بالفوائد الغذائية</div>
+            <div class="feature-item">⚡ مصدر طاقة طبيعي</div>
+            <div class="feature-item">🌸 مستخرج من زهور برية</div>
+        </div>
+
+        <div class="media-gallery">
+            <h3>🖼️ الإعلان والصورة المتحركة</h3>
+            <p>الهوية الرسمية المتحركة لعسل الباحة:</p>
+            <video class="promo-video" autoplay loop muted playsinline>
+                <source src="https://mkhgirls-my.sharepoint.com/:v:/g/personal/t571596_mkhg_moe_gov_sa/IQDzHtyGHEGbSZvdrUAU7l3lAXGIFeJQlil0kJHycB13Yno?e=piKZS6" type="video/mp4">
+                متصفحك لا يدعم تشغيل هذا الفيديو[span_1](start_span)[span_1](end_span).
+            </video>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- القسم الثالث: الفيديو الدعائي المتكامل -->
+    <div class="container section-video" id="video-section">
+        <div class="video-container">
+            <h3>🎥 الفيديو الدعائي لعسل الباحة</h3>
+            <p>شاهد العرض المرئي المتكامل عن جمال الطبيعة واستخراج العسل الأصيل:</p>
+            <video class="main-video" controls>
+                <source src="https://mkhgirls-my.sharepoint.com/:v:/g/personal/t571596_mkhg_moe_gov_sa/IQDnSF_qxny4RpGhKXGr2CcHAS3hbl9UjulzBWcQ5GQ8MPM?e=c4ZQq4" type="video/mp4">
+                متصفحك لا يدعم تشغيل هذا الفيديو[span_2](start_span)[span_2](end_span).
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © ١٤٤٧هـ | مشروع عسل الباحة - السعودية بعيون تقنية</p>
+    </footer>
+
+    <!-- ربط ملف الجافا سكريبت -->
+    <script src="script.js"></script>
+</body>
+</html>
